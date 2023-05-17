@@ -1,0 +1,66 @@
+.post {
+    width: 320px;
+    margin: 0px 0px 15px 20px;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgba(255, 255, 255, 0.4);
+  }
+  .post:hover {
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.3);
+  }
+  
+  .postImg {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    align-items: center;
+    border-radius: 7px;
+  }
+  
+  .postInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .postCat {
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #be9656;
+    line-height: 19px;
+    margin-top: 0px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .postTitle {
+    font-family: "Josefin Sans", Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 900;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+  
+  .postDate {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 13px;
+    font-weight: 400;
+    color: #999999;
+    margin-top: 15px;
+  }
+  
+  .postDesc {
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    color: #444444;
+    margin-top: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }

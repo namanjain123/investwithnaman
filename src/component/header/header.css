@@ -1,0 +1,59 @@
+.header {
+    margin-top: 20px;
+    position: relative; /* add this to enable absolute positioning for children */
+  }
+  
+  .headerTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "verdana";
+    color:black;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%; /* center the text horizontally */
+    text-align: center;
+  }
+  
+  .headerTitleLg {
+    font-size: 5vw;
+    margin-bottom: 10px; /* add some spacing between the titles and the image */
+  }
+  
+  .headerTitleSm {
+    color: rgb(51, 51, 51);
+    font-size: 2vw;
+    margin-bottom: 20px; /* add some spacing between the titles and the image */
+  }
+  
+  .headerImg {
+    width: 100%;
+    max-width: 100%; /* adjust the max-width as needed */
+    margin-top: 10%; /* add some spacing between the image and the titles */
+    object-fit: cover;
+  }
+  
+  @media screen and (min-width: 768px) {
+    /* for screens with a minimum width of 768px (tablets and desktops) */
+    .headerTitles {
+      top: 2%;
+      left: 10%;
+      right: 10%; /* center the text vertically and horizontally */
+    }
+  
+    .headerTitleLg {
+      font-size: 4vw;
+      margin-bottom: 20px; /* increase the spacing between the titles and the image */
+    }
+  
+    .headerTitleSm {
+      font-size: 2vw;
+    }
+  
+    .headerImg {
+      
+      position: static; /* increase the spacing between the image and the titles */
+    }
+  }
+  

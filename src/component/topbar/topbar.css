@@ -1,0 +1,120 @@
+.top {
+  width: 100%;
+  height: 10vh;
+  background-color: beige;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Lora", sans-serif;
+}
+
+.topLeft,
+.topRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topIcon {
+  font-size: 1.5em;
+  margin-right: 1vw;
+  color: rgb(88, 87, 87);
+  cursor: pointer;
+}
+
+.topCenter {
+  flex: 5;
+}
+
+.topList {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.topListItem {
+  margin-right: 2vw;
+  font-size: 1.5em;
+  font-weight: 300;
+  cursor: pointer;
+  color: black;
+}
+
+.topListItem:hover,
+.topSearchIcon:hover {
+  color: gray;
+}
+
+.topIcon:hover {
+  color: black;
+}
+.topImg:hover{
+  transform: scale(1.25); /* expand the image */
+  border: 2px solid #000; /* add a black border */
+}
+
+.topImg {
+  width: 8vh;
+  height: 8vh;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 0;
+  margin-left: 2vw;
+  cursor: pointer;
+  
+}
+
+.topSearchIcon {
+  font-size: 1.2em;
+  color: black;
+  cursor: pointer;
+  margin-top: 1vh;
+}
+
+@media screen and (max-width: 360px) {
+  .top {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .topLeft,
+  .topRight {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .topCenter {
+    flex: 2;
+    margin-top: 2vw;
+  }
+
+  .topList {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .topIcon {
+    margin-right: 0;
+  }
+
+  .topImg {
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .topSearchIcon {
+    margin-top: 2vw;
+  }
+}
